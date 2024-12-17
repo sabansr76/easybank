@@ -51,7 +51,7 @@
 </header>
 
 <main class="overflow-hidden">
-    <div class="container-fluid ">
+    <div class="container-fluid intro-section">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-4 order-lg-1 order-2">
@@ -68,22 +68,19 @@
                     </div>
                 </div>
                 <div class="col-lg-8 order-1 order-lg-2 position-relative">
-                    <div class="background-image">
+                    <div class="container-image">
                         <div class="position-absolute top-50 start-50 translate-middle">
-                            <img class="hero-image" src="./public/images/image-mockups.png " alt="mobile"/>
+                            <img class="intro-image" src="./public/images/image-mockups.png " alt="mobile"/>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid main d-flex flex-column card-wrapper mb-10 ">
-
+    <div class="container-fluid card-wrapper">
         <div class="container">
-
-            <div class="row choose-easy-bank d-flex flex-column g-5 border-0 ">
+            <div class="row card-featured border-0 ">
                 <div class="col-md-6 p-0">
                     <div class="card border-0 ">
                         <div class="card-body">
@@ -98,7 +95,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="card-group easybank-group d-flex justify-content-center align-items-center  ">
+                    <div class="group-card d-flex justify-content-center align-items-center g-3 ">
                         <div class="col-md-3">
                             <div class="card border-0">
                                 <img src="./public/images/icon-online.svg"
@@ -135,7 +132,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 ">
                             <div class="card border-0">
                                 <img src="./public/images/icon-api.svg"
                                      class="card-img-top position-relative pt-5 ps-3" alt="open API">
@@ -157,48 +154,53 @@
             <div class="row mb-5">
                 <div class="col-md-12">
                     <h2 class="pb-5 fs-2">Latest Articles</h2>
-                    <div class="card-group articles d-flex justify-content-center align-items-md-start g-5 flex-wrap">
-                        <div class="card border-0">
-                            <img src="./public/images/image-currency1.jpg" class="card-img-top" alt="money">
-                            <div class="card-body">
-                                <small>By Claire Robinson</small>
-                                <a href="#" class="card-title">Receive money in any currency with no fees</a>
-                                <p class="card-text line-clamp">The world is getting smaller and we’re becoming
-                                    more mobile. So why should you be
-                                    forced to only receive money in a single …</p>
+                    <div class="row articles d-flex justify-content-center align-items-md-center flex-wrap g-3">
+                        <div class="col-lg-3">
+                            <div class="card border-0 bg-white">
+                                <img src="./public/images/image-currency1.jpg" class="card-img-top" alt="money">
+                                <div class="card-body">
+                                    <small>By Claire Robinson</small>
+                                    <a href="#" class="card-title">Receive money in any currency with no fees</a>
+                                    <p class="card-text line-clamp">The world is getting smaller and we’re becoming
+                                        more mobile. So why should you be
+                                        forced to only receive money in a single …</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card border-0">
-                            <img src="./public/images/image-restaurant.jpg" class="card-img-top"
-                                 alt="restaurant">
-                            <div class="card-body">
-                                <small>By Wilson Hutton</small>
-                                <a href="#" class="card-title">Treat yourself without worrying about money</a>
-                                <p class="card-text line-clamp">Our simple budgeting feature allows you to
-                                    separate out your spending and set
-                                    realistic limits each month. That means you </p>
+                        <div class="col-lg-3">
+                            <div class="card border-0 bg-white">
+                                <img src="./public/images/image-restaurant.jpg" class="card-img-top" alt="restaurant">
+                                <div class="card-body">
+                                    <small>By Wilson Hutton</small>
+                                    <a href="#" class="card-title">Treat yourself without worrying about money</a>
+                                    <p class="card-text line-clamp">Our simple budgeting feature allows you to
+                                        separate out your spending and set
+                                        realistic limits each month. That means you </p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card border-0">
-                            <img src="./public/images/image-plane.jpg" class="card-img-top" alt="plane">
-                            <div class="card-body">
-                                <small>By Wilson Hutton</small>
-                                <a href="#" class="card-title"> Take your Easybank card wherever you go</a>
-                                <p class="card-text line-clamp">We want you to enjoy your travels. This is why
-                                    we don’t charge any fees on purchases
-                                    while you’re abroad. We’ll even show you </p>
+                        <div class="col-lg-3">
+                            <div class="card border-0 bg-white">
+                                <img src="./public/images/image-plane.jpg" class="card-img-top" alt="plane">
+                                <div class="card-body">
+                                    <small>By Wilson Hutton</small>
+                                    <a href="#" class="card-title"> Take your Easybank card wherever you go</a>
+                                    <p class="card-text line-clamp">We want you to enjoy your travels. This is why
+                                        we don’t charge any fees on purchases
+                                        while you’re abroad. We’ll even show you </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0">
-                            <img src="./public/images/image-confetti.jpg" class="card-img-top" alt="confetti">
-                            <div class="card-body">
-                                <small>By Claire Robinson</small>
-                                <a href="#" class="card-title"> Our invite-only Beta accounts are now live!</a>
-                                <p class="card-text line-clamp"> After a lot of hard work by the whole team,
-                                    we’re excited to launch our closed beta.
-                                    It’s easy to request an invite through the site </p>
+                        <div class="col-lg-3">
+                            <div class="card border-0 bg-white">
+                                <img src="./public/images/image-confetti.jpg" class="card-img-top" alt="confetti">
+                                <div class="card-body">
+                                    <small>By Claire Robinson</small>
+                                    <a href="#" class="card-title"> Our invite-only Beta accounts are now live!</a>
+                                    <p class="card-text line-clamp"> After a lot of hard work by the whole team,
+                                        we’re excited to launch our closed beta.
+                                        It’s easy to request an invite through the site </p>
+                                </div>
                             </div>
                         </div>
                     </div>
